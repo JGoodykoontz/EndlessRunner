@@ -42,7 +42,12 @@ class Preload extends Phaser.Scene {
         this.load.image('background', './assets/Background/background2.png');
         this.load.image('border1', './assets/Background/border1.png');
         this.load.image('border2', './assets/Background/border2.png');
-        this.load.image('border3', './assets/Background/border3.png');        
+        this.load.image('border3', './assets/Background/border3.png');       
+        
+        this.load.image('menuTitle', './assets/menuTitle.png');
+        this.load.image('tutorialA', './assets/menuA.png');
+        this.load.image('tutorialW', './assets/tutorialW.png');
+        this.load.image('tutorialD', './assets/tutorialD.png');
     }
 
     update() {

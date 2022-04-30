@@ -1,0 +1,16 @@
+#bg_art{
+    background-size: cover;
+    margin: auto;
+    height: auto;
+    background: url('./assets/Background/ERbackground.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+canvas{
+    display: block;
+    margin: 94px auto;
+    border: solid #05411d 5px;
+    border-radius: 20px;
+  }
+  

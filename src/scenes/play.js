@@ -140,9 +140,16 @@ class Play extends Phaser.Scene {
             loop: true
         });
 
+        //key tutorial
+        this.tutorialA = this.add.sprite(lane1, config.height/2 + 50, 'tutorialA').setOrigin(0.5).setScale(0.25);
+        this.tutorialW = this.add.sprite(config.width/2, config.height/2, 'tutorialW').setOrigin(0.5).setScale(0.25);
+        this.tutorialD = this.add.sprite(lane3, config.height/2 + 50, 'tutorialD').setOrigin(0.5).setScale(0.25);
     }
 
     update() {
+        this.tutorial(this.tutorialA);
+        this.tutorial(this.tutorialD);
+        this.tutorial(this.tutorialW);
         if (!this.gameoverFlag) {
             // background
             this.background.tilePositionY -= gameSpeed;
@@ -229,6 +236,12 @@ class Play extends Phaser.Scene {
                 this.scene.start('gameover');
             });
         }
+    }
+
+    tutorial(keyTexture) {
+        this.time.delayedCall(2000, () => {
+                keyTexture.destroy();
+        });
     }
 
     scoreUP() {
