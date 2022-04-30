@@ -18,10 +18,8 @@ let config = {
     },
     scene: [Preload, Menu, Play, Gameover],
     scale: {
-        autoCenter: Phaser.Scale.CENTER_BOTH,
-        mode: Phaser.Scale.NONE,
-        width:420,
-        height:600
+        autoCenter: Phaser.Scale.CENTER_HORIZONTAL,
+        mode: Phaser.Scale.FIT
     },
 };
 let game = new Phaser.Game(config);
